@@ -1,0 +1,65 @@
+ext {
+    sdk = [
+            'compile': 30,
+            'min'    : 21,
+            'target' : 30
+    ]
+    build_tools_version = '30.0.3'
+    kotlin_version = '1.3.72'
+    lifecycle_version = '2.2.0'
+    retrofit_version = '2.3.0'
+    lottieVersion = '3.4.1'
+    hilt_version = '2.28-alpha'
+    compose_version = '1.0.0-beta09'
+    libraries = [
+            kotlin      : [
+                    kotlin: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
+                    stdlib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+            ],
+            compose     : [
+                    material: "androidx.compose.material:material:$compose_version",
+                    ui      : "androidx.compose.ui:ui:$compose_version",
+                    uiTools : "androidx.compose.ui:ui-tooling:$compose_version"
+            ],
+            androidx    : [
+                    material            : 'com.google.android.material:material:1.2.1',
+                    appcompat           : 'androidx.appcompat:appcompat:1.2.0',
+                    recyclerView        : 'androidx.recyclerview:recyclerview:1.0.0',
+                    constraintLayout    : 'androidx.constraintlayout:constraintlayout:2.0.4',
+                    ktx                 : 'androidx.core:core-ktx:1.3.2',
+                    fragment            : 'androidx.fragment:fragment-ktx:1.2.5',
+                    navigationFragment  : 'androidx.navigation:navigation-fragment-ktx:2.3.0',
+                    navigationFragmentUi: 'androidx.navigation:navigation-ui-ktx:2.3.0'
+            ],
+            hilt        : [
+                    hiltAndroid : "com.google.dagger:hilt-android:$hilt_version",
+                    hiltCompiler: "com.google.dagger:hilt-android-compiler:$hilt_version"
+            ],
+            lifecycle   : [
+                    extensions  : "androidx.lifecycle:lifecycle-extensions:$lifecycle_version",
+                    ktx         : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+                    lifecycleKtx: "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+            ],
+            retrofit    : [
+                    retrofit      : "com.squareup.retrofit2:retrofit:$retrofit_version",
+                    converter     : "com.squareup.retrofit2:converter-gson:$retrofit_version",
+                    adapterrxjava2: "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
+                    testing       : "com.squareup.retrofit2:retrofit-mock:$retrofit_version",
+                    logger        : "com.squareup.okhttp3:logging-interceptor:4.6.0",
+                    squareup      : "com.squareup.okhttp3:okhttp:4.9.0"
+            ],
+            rx          : [
+                    kotlin : 'io.reactivex.rxjava2:rxkotlin:2.4.0',
+                    android: 'io.reactivex.rxjava2:rxandroid:2.1.1'
+            ],
+            testing     : [
+                    junit         : 'junit:junit:4.12',
+                    junitExt      : 'androidx.test.ext:junit:1.1.2',
+                    mockitoKotlin2: 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0',
+                    coreTesting   : "android.arch.core:core-testing:2.1.0"
+            ],
+            thirdparties: [
+                    lottie: "com.airbnb.android:lottie:$lottieVersion"
+            ]
+    ]
+}
