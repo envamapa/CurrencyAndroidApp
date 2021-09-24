@@ -32,8 +32,6 @@ android {
 
 dependencies {
 
-    implementation libraries.rx.kotlin
-
     implementation libraries.retrofit.retrofit
     implementation libraries.retrofit.converter
     implementation libraries.retrofit.adapterrxjava2

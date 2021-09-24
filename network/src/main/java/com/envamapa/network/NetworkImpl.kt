@@ -40,6 +40,6 @@ class NetworkImpl @Inject constructor() : Network {
 
     companion object {
         private const val SERVICE_TIME_IN_SECONDS: Long = 40
-        private const val BASE_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1"
+        private const val BASE_URL = "https://cdn.jsdelivr.net"
     }
 }
