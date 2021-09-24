@@ -59,7 +59,7 @@ ext {
                     android: 'io.reactivex.rxjava2:rxandroid:2.1.1'
             ],
             testing     : [
-                    junit         : 'junit:junit:4.12',
+                    junit         : 'junit:junit:4.13.2',
                     junitExt      : 'androidx.test.ext:junit:1.1.2',
                     mockitoKotlin2: 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0',
                     coreTesting   : "android.arch.core:core-testing:2.1.0"
