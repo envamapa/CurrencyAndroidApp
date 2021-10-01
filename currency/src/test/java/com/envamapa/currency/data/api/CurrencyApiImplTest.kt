@@ -13,7 +13,7 @@ class CurrencyApiImplTest {
     private val currencyApi = CurrencyApiImpl(currencyService)
 
     @Test
-    fun `when getting the currencies, a response is received`() {
+    fun `when getting the currencies, then a response is received`() {
         // given a currency service
         currencyService.apply {
             whenever(getListOfCurrencies())
@@ -26,6 +26,7 @@ class CurrencyApiImplTest {
         // when getting the list of currencies 
         val result = currencyApi.getListOfCurrencies().test()
 
+        // then we got the expected result
         result.assertValue(expectedResult)
     }
 }
